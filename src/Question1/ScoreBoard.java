@@ -25,7 +25,6 @@ public class ScoreBoard {
                 problemsSolved = sc.nextInt();
 
                 students.add(new Students(studentsName, problemsSolved));
-                System.out.println(students);
             }
 
             for (int j = 0; j < entry; j++) {
