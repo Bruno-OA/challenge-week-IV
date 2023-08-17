@@ -5,22 +5,13 @@ public class Students {
     String studentsName;
     int problemsSolved;
 
-    public String getstudentsName() {
+    public String getStudentsName() {
         return studentsName;
     }
 
-    public void setstudentsName(String studentsName) {
-        this.studentsName = studentsName;
-    }
-
-    public int getproblemsSolved() {
+    public int getProblemsSolved() {
         return problemsSolved;
     }
-
-    public void setproblemsSolved(int problemsSolved) {
-        this.problemsSolved = problemsSolved;
-    }
-
 
     public Students(String studentsName, int problemsSolved) {
         this.problemsSolved = problemsSolved;

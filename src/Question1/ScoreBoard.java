@@ -13,6 +13,9 @@ public class ScoreBoard {
         int entry;
         String studentsName;
         int problemsSolved;
+        String failedStudent = "";
+        int minorProblem = 0;
+
 
         while (sc.hasNext()) {
             entry = sc.nextInt();
@@ -24,6 +27,28 @@ public class ScoreBoard {
                 students.add(new Students(studentsName, problemsSolved));
                 System.out.println(students);
             }
+
+            for (int j = 0; j < entry; j++) {
+                if (j == 0) {
+
+                    minorProblem = students.get(j).getProblemsSolved();
+                    failedStudent = students.get(j).getStudentsName();
+
+                } else if (students.get(j).getProblemsSolved() < minorProblem) {
+
+                    minorProblem = students.get(j).getProblemsSolved();
+                    failedStudent = students.get(j).getStudentsName();
+
+                } else if (students.get(j).getProblemsSolved() == minorProblem) {
+                    if (students.get(j).getStudentsName().compareTo(failedStudent) > 0){
+
+                        students.get(j).getStudentsName().toLowerCase();
+                        failedStudent = students.get(j).getStudentsName();
+
+                    }
+                }
+            }
+            System.out.println(failedStudent);
 
         }
 
