@@ -11,6 +11,13 @@
     "$date" : {
       "$numberLong" : "29122001"
     }
+  },
+  "address" : {
+    "zip" : "04849-008",
+    "street" : "rua dos bobos",
+    "complement" : "0",
+    "city" : "São Paulo",
+    "state" : "SP",
+    "country" : "Brazil"
   }
-
 }]
