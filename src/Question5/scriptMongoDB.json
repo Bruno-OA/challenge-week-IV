@@ -1,0 +1,16 @@
+[{
+  "name" : "Bruno",
+  "age" : 21,
+  "phone" : 11984996010,
+  "height" : {
+    "$numberDecimal" : "1.81"
+  },
+  "email" : "brunooliveiraalves78@gmail.com",
+  "cpf" : "333.666.999-88",
+  "birthday" : {
+    "$date" : {
+      "$numberLong" : "29122001"
+    }
+  }
+
+}]
